@@ -1,0 +1,9 @@
+.env
+.DS_Store
+node_modules
+package.json
+playwright-report
+allure-results
+allure-report
+test-results
+tmp
