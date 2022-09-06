@@ -1,0 +1,44 @@
+{
+  "name": "stakewise-tests",
+  "engines": {
+    "node": "=16.16.0",
+    "npm": "=8.11.0"
+  },
+  "scripts": {
+    "typechain": "typechain --target ethers-v5 --out-dir contracts/types './src/contracts/abis/*.json'",
+    "hardhat": "node ./src/scripts/node run=./util/startHardhat.ts",
+    "e2e": "npx playwright test --workers 1",
+    "e2e:test": "npx playwright test -g",
+    "report_generate": "npx allure generate",
+    "report_open": "npx allure open"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.10",
+    "@babel/plugin-proposal-object-rest-spread": "7.18.9",
+    "@babel/preset-env": "7.18.10",
+    "@babel/preset-typescript": "7.18.6",
+    "@babel/register": "7.18.9",
+    "@ethersproject/bignumber": "5.6.2",
+    "@nomiclabs/hardhat-ethers": "2.1.0",
+    "@nomiclabs/hardhat-waffle": "2.0.3",
+    "@playwright/test": "1.24.1",
+    "@typechain/ethers-v5": "10.1.0",
+    "@types/fs-extra": "9.0.13",
+    "@types/node": "17.0.45",
+    "@types/unzip-stream": "0.3.1",
+    "allure-playwright": "2.0.0-beta.18",
+    "ethereum-waffle": "3.4.4",
+    "ethers": "5.6.9",
+    "fs-extra": "10.1.0",
+    "hardhat": "2.10.1",
+    "playwright": "1.24.2",
+    "ts-node": "10.9.1",
+    "typechain": "8.1.0",
+    "typescript": "4.7.4",
+    "unzip-stream": "0.3.1"
+  },
+  "dependencies": {
+    "@uniswap/sdk-core": "3.0.1",
+    "dotenv": "16.0.1"
+  }
+}
